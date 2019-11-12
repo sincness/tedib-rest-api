@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Signika&display=swap');
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Signika';
+}
+
+header {
+height: 52px;
+background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    nav {
+    margin: 0 0 0 10%;
+
+        ul {
+            display: flex;
+            list-style: none;
+            li {
+                padding: 1em;
+                button {
+                    border: none;
+                    background: none;
+                    cursor: pointer;
+                    font-size: 1em;
+                    color: #cecece;
+                    transition: color 100ms linear;
+                    &:hover {
+                        color: #6e858f;
+                    }
+                }
+            }
+        }
+    }
+}
+
+form {
+    grid-column: 2;
+    margin-top: 2em;
+    display: grid;
+    border-radius: 10px;
+    
+    background-color: #DCD9D4; 
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%); 
+    background-blend-mode: soft-light,screen;
+
+    h2 {
+        margin: 5% 10% 3%;
+        grid-row: 1;
+    }
+
+    input {
+        padding: 1em;
+        margin: 1em;
+        width: 80%;
+        justify-self: center;
+    }
+
+    button {
+    width: 60%;
+    justify-self: center;
+    padding: 0.8em;
+    margin: 1em 0 2em;
+    font-size: .8em;
+    border: none;
+    border-radius: 3px;
+    background:royalblue;
+    }
+}
+
+#root {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.userbox {
+    background-color: #DCD9D4; 
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%); 
+    background-blend-mode: soft-light,screen;
+    margin: 1rem;
+    padding: 10px;
+    // border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    // box-shadow: 9px 7px 40px -6px rgba(0,0,0,0.25);
+    // box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.25);
+    width: 400px;
+    height:150px;
+    a {
+        cursor: pointer;
+        .delete {
+            color: darkred;
+            transition: color 100ms linear;
+            &:hover {
+                color: crimson;
+            }
+        }
+        .edit {
+            color: #203A43;
+            transition: color 100ms linear;
+            &:hover {
+                color: #2C5364;
+            }            
+        }
+    }
+  }
